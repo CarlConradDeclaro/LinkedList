@@ -68,6 +68,6 @@ public class LinkedList {
          
           n.print();
           
-          System.out.println(n.search(53));
+          System.out.println(n.searchNodee(53));
       }
 }
