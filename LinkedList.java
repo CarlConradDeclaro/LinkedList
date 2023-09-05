@@ -20,9 +20,6 @@ class Node{
 class List{
    
     Node head;
-       int data;
-       Node next;
-
 
     void add(int data){
     Node node = new Node(data);
