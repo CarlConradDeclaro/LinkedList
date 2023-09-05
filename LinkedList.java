@@ -40,7 +40,7 @@ class List{
          }
     }
     
-    boolean search(int x){
+    boolean searchNodee(int x){
       Node n =head;
       
       while(n.next != null){
