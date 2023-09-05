@@ -28,17 +28,27 @@ class LengthOfList{
     head =node;
     }
     
-    // find the length of the list  
+    
+    // find the length in Iteritive way
     void length(){
-     Node current= head;
-     int count=0;
-     while(current != null){
-           count++;
-           current= current.next;
-     }
-     System.out.println(count);
+       Node current= head;
+       int count =0;
+       while(current != null){
+          count++;
+          current = current.next;
+       }      
+       System.out.println(count);
     }
     
+    
+    
+    // find the length of the list in recursive way
+    int getCountRec(Node head){
+       if(head == null)
+           return 0;    
+       return 1 + getCountRec(head.next);
+    }   
+    int getCount(){return getCountRec(head);}
     
 }
 
@@ -54,5 +64,6 @@ public class FindLengthLinkedList {
         list.add(5);
         
         list.length();
+       System.out.println( list.getCount());
       }
 }
